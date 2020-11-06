@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">System Resource Limited(SRL)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SRL</string>
+    <string name="nav_header_subtitle">System Resource Limited</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_ourTeam">Our Team</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_login">Login</string>
+</resources>

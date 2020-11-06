@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECEC"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".LogInOption">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#858585"
+            android:textAlignment="center"
+            android:padding="15dp"/>
+<!--        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:ccp_defaultNameCode="jp"
+            android:layout_margin="20dp"
+            app:ccp_textColor="@android:color/holo_orange_dark"
+            android:gravity="center_vertical"
+            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--<com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Code">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_countryCode"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:focusable="false"
+                    android:layout_height="60dp"/>
+            </com.google.android.material.textfield.TextInputLayout>-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Enter Your Phone Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_phone_number"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:layout_height="60dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Add Your Country Code With Phone Number."
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FF4141"
+            android:textAlignment="center"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We Will Send you a SMS for verification Message and data rates may apply."
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#7A7A7A"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:padding="20dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_verify_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_arrow_forward" />
+    </LinearLayout>
+
+</LinearLayout>

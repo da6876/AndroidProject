@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bd.com.arda.findyourhome">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity android:name=".FastPage">
+        </activity>
+        <activity android:name=".MyToletList" />
+        <activity android:name=".TakeImageTolet" />
+        <activity android:name=".PostTolet" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBjqwKzeYFyDioWV7u9dxqmhAu0pAdBZ7w" />
+
+        <activity
+            android:name=".map.MapsActivity"
+            android:label="Map" />
+        <activity android:name=".TakeAddress" />
+        <activity android:name=".PhoneVerifyCode" />
+        <activity android:name=".Profilepage" />
+        <activity android:name=".RegistrationPage" />
+        <activity android:name=".LogInPage" />
+        <activity android:name=".GoogleLogin" />
+        <activity android:name=".PhoneVerification" />
+        <activity android:name=".OptionLogin">
+        </activity>
+        <activity android:name=".welcomeslider.WelcomePage"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
